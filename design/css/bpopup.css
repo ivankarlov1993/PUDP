@@ -1,0 +1,103 @@
+/*--Popubottom:--*/
+
+.popup{
+	display:none;
+	margin:0 auto;
+	background-color:#fff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	-ms-border-radius: 6px;
+	border-radius: 6px;
+	border:1px solid #757575;
+	padding:30px 40px;
+}
+
+.popup a{
+color:#00577c;
+}
+
+.popup a:hover{
+color:#208ebc;
+}
+.popup h2{
+	letter-spacing:-1px;
+	text-align:center;
+}
+
+.popup table{
+	margin:0 auto;
+	table-layout:fixed;
+}
+
+.popup td,.popup th {
+	vertical-align:middle;
+	text-align:left;
+}
+
+.popup th{
+	font:14px "Open Sans", Arial, sans-serif;
+	padding:5px;
+	color:#313131;
+}
+
+.popup td{
+	width:255px;
+	font:13px/1.2 "Open Sans", Arial, sans-serif;
+	color:#313131;
+	padding:5px;
+}
+
+.popup .warning{
+	font-size:12px;
+	color:#3b3b3b;
+}
+
+.popup .under{
+	font-size:14px;
+}
+
+.popup .addtocard{
+	width:162px;
+	display:inline-block;
+}
+
+#reg-popup .addtocard{
+	margin:20px 0;
+}
+#enter-popup .addtocard, #forgot-popup .addtocard{
+	margin:10px 0;
+}
+.forgot-pass{
+	max-width:320px;
+}
+.forgot-pass p{
+	margin-bottom:20px;
+}
+.popup textarea{
+	height:110px;
+	max-width:220px;
+}
+.popup-note{
+	font: italic 87.5% "Roboto Light", Arial, sans-serif;
+	color:#989898;
+}
+
+.b-modal{
+	background-color:#7f7f7f !important;
+}
+
+.b-close{
+	width:10px;
+	height:10px;
+	display:block;
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:url('../../../../Downloads/klinika/images/bpopup/close.jpg') no-repeat;
+	opacity: 0.8;
+}
+
+.b-close:hover{
+	opacity:1;
+}
