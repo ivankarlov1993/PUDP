@@ -1,8 +1,7 @@
-/bitrix/activities/bitrix
+/bitrix/activities
 /bitrix/admin
 /bitrix/cache
 /bitrix/components/bitrix
-/bitrix/components/demo
 /bitrix/gadgets/bitrix
 /bitrix/controller_log
 /bitrix/images
@@ -13,7 +12,7 @@
 /bitrix/otp
 /bitrix/sounds
 /bitrix/template
-/bitrix/image_uploader
+bitrix/image_uploader
 /bitrix/tmp
 /bitrix/tools
 /bitrix/wizards/bitrix
@@ -24,10 +23,14 @@
 /bitrix/p3p.xml
 /bitrix/updates
 /phpinfo.php
-/web.config
-/phpinfo.php
 /upload
 /examples
+/web.config
+/phpinfo.php
+.idea
+_import/*
+export/*
+_reserv_backup_20110803/
+*.log
 .htaccess
-.idea/
-.gitignore
+.htpasswd

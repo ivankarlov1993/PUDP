@@ -1,50 +1,29 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Главная", 
-		"/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Профиль", 
-		"/personal/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Контент", 
-		"/content/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"about", 
+		"Об отделении", 
 		"/about/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Doctors", 
-		"/doctors/", 
+		"Услуги и цены", 
+		"/services/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"equipment", 
+		"Оборудование", 
 		"/equipment/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"services", 
-		"/services/", 
+		"Врачи отделения", 
+		"/doctors/", 
 		Array(), 
 		Array(), 
 		"" 
