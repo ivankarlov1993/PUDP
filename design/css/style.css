@@ -588,7 +588,7 @@ nav ul li a{
 .nav-arrow, .round, .calendar, .sl-right-h, .sl-right, .navicon01,
 .navicon02, .icon01, .icon02, .icon03, .icon04,
 .icon05, .icon06, .icon07{ 
-	background: url('../../../../Downloads/klinika/images/sprite.png') no-repeat;
+	background: url('../images/sprite.png') no-repeat;
 }
  
 .calendar { background-position: -10px -240px; width: 80px; height: 80px; }
