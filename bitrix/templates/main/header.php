@@ -9,7 +9,6 @@
     <meta http-equiv="x-rim-auto-match" content="none">
 
     <?$APPLICATION->ShowHead();?>
-    <?$APPLICATION->ShowPanel();?>
     <?
         $APPLICATION->SetAdditionalCSS('/design/css/normalize.css');
         $APPLICATION->SetAdditionalCSS('/design/css/style.css');
@@ -29,14 +28,24 @@
     <script type="text/javascript" src="js/modernizr.js"></script>
 </head>
 <body>
+<?$APPLICATION->ShowPanel();?>
 <div id="wrapper">
 
     <header id="header" class="clearfix row" role="banner">
         <div id="logo">
-            <a href="/"><img src="images/logo.png" alt="Поликлиника №3 - Управление делами президента РФ" /></a>
+            <a href="/"><img src="/design/images/logo.png" alt="Поликлиника №3 - Управление делами президента РФ" /></a>
         </div>
         <div class="header__contacts">
-            <span class="tel"><a href="tel:+74959821010">8 495 982 1010</a></span>
+            <span class="tel">
+                <a href="tel:+74959821010">
+                    <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "AREA_FILE_RECURSIVE" => "Y",
+                            "PATH" => "/include/telephone.php"
+                        )
+                    );?>
+                </a>
+            </span>
             Многоканальный телефон
         </div>
     </header>
@@ -49,13 +58,13 @@
 	"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
 	"MENU_CACHE_USE_GROUPS" => "N",	// Учитывать права доступа
 	"MENU_CACHE_GET_VARS" => "",	// Значимые переменные запроса
-	"MAX_LEVEL" => "2",	// Уровень вложенности меню
+	"MAX_LEVEL" => "1",	// Уровень вложенности меню
 	"CHILD_MENU_TYPE" => "second",	// Тип меню для остальных уровней
 	"USE_EXT" => "Y",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
 	"DELAY" => "N",	// Откладывать выполнение шаблона меню
 	"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
 	),
 	false
-);?>
+    );?>
     <div id="main" role="main">
 		
