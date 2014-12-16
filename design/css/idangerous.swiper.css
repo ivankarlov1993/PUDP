@@ -89,13 +89,15 @@ sizes, pagination, etc.
 	overflow:hidden;
 	width:100%;
 	position:relative;
+	height:558px;
 }
 #main-slider .swiper-container, #main-slider .swiper-slide {
 	width: 100%;
 	height: 100%;
 } 
 #main-slider .swiper-container{
-	height:508px;
+	height:480px;
+	overflow:hidden;
 }
 #main-slider .slider-image{
 	display:table;
@@ -129,6 +131,7 @@ Next-Prev Arrows Styles
 	display:block;
 	cursor:pointer;	
 }
+.sl-navigation{margin-top:27px;}
 .arrow-right {float:right;margin: 0 22px 0 0; }
 .arrow-left{float:left;margin: 0 0 0 30px; }
 

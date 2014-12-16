@@ -25,7 +25,7 @@ hr {
 	padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, th {
+h1, h2, h3, h4, h5, h6, th, .h1, .h2, .h3, .h4, .h5, .h6{
 	font-weight: normal;
 	text-align:left;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -37,7 +37,7 @@ h1,.h1 {
 	margin:1em 0;
 }
 h2,.h2 {
-  font-size: px;
+  font-size: 20px;
 }
 h3,.h3 {
   font-size: 20px;
@@ -208,13 +208,16 @@ input[type="checkbox"], input[type="radio"] {
 .relative {position:relative;}
 .hide{display:none;}
 .nowrap{white-space:nowrap}
+.noindent{text-indent:0;}
 .icon, .i-b{display: inline-block;vertical-align: middle;}
 .row{margin:30px 0;clear:both;}
 .wrapped-row{margin-left: -30px;}
 .col{margin:0 0 0 30px; background-color:#fff;}
+.bottom_col{margin:30px 0 0;}
 .col__content{padding:30px;}
 .col__bottom{padding:20px 30px;border-top: 3px solid #E5EDF2;}
 .col__header{padding: 27px 23px 31px;margin:0;}
+.col_title{border-bottom:1px solid #e5edf2;padding:12px 28px;}
 .clearfix:after {
 	content: ".";
 	display: block;
@@ -223,8 +226,9 @@ input[type="checkbox"], input[type="radio"] {
 	clear: both;
 	visibility: hidden;
 }
-.border-top-blue, .border-top-green:hover{	border-top: 4px solid #4bb4e8;}
+.border-top-blue, .border-top-green:hover{border-top: 4px solid #4bb4e8;}
 .border-top-green, .border-top-blue:hover {border-top: 4px solid #9cd70e;}
+.border-top-red{border-top: 4px solid #c9376e;}
 
 
 .equal{
@@ -265,8 +269,6 @@ html, body{
 
 body{
 	font:13px/20px 'PT Sans';
-	width:1038px;
-	margin: 0 auto;
 	color:#4F5D6E;
 	overflow-x:hidden;
 	background: rgb(26,49,95);
@@ -277,8 +279,12 @@ body{
     background: -o-linear-gradient(top,  rgba(26,49,95,1) 0%,rgba(26,49,95,1) 10%,rgba(29,108,141,1) 24%,rgba(41, 136, 151, 1) 37%,rgba(39,45,100,1) 77%,rgba(26,49,95,1) 90%,rgba(26,49,95,1) 100%);
     background: -ms-linear-gradient(top,  rgba(26,49,95,1) 0%,rgba(26,49,95,1) 10%,rgba(29,108,141,1) 24%,rgba(41, 136, 151, 1) 37%,rgba(39,45,100,1) 77%,rgba(26,49,95,1) 90%,rgba(26,49,95,1) 100%);
     background: linear-gradient(to bottom,  rgba(26,49,95,1) 0%,rgba(26,49,95,1) 10%,rgba(29,108,141,1) 24%,rgba(41, 136, 151, 1) 37%,rgba(39,45,100,1) 77%,rgba(26,49,95,1) 90%,rgba(26,49,95,1) 100%);
-	margin:0 auto;
 	-webkit-font-smoothing: antialiased;
+}
+
+#wrapper{
+	width:1038px;
+	margin: 0 auto;
 }
 
 .button{
@@ -355,6 +361,7 @@ body{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	color:#000;
 }
 #navigation ul li:first-child a{
 	border-left:none;
@@ -376,7 +383,6 @@ nav ul li a{
 	text-decoration: none;
 	font-family:'Open Sans';
 	font-weight:300;
-	color:#000;
 }
 
 
@@ -432,6 +438,9 @@ nav ul li a{
 	float:left;
 	padding:0 20px;
 }
+.aside_right.price-box {
+	width:252px;
+}
 .price-box h2{ 
 	text-align:center;
 	color:#00AFEB;
@@ -454,22 +463,202 @@ nav ul li a{
 .basic-info{
 	height:575px;
 }
+.content{
+	min-height:669px;
+}
+
+
+/* Doctors page */
+
+.doctors-ul{
+	list-style:none;
+	margin:0 0 0 -31px;
+	padding:0;
+}
+.doctors-ul li{
+	float:left;
+	width:218px;
+	margin:31px 0 0 31px;
+	padding:0;
+	background:#fff;
+	min-height:459px;
+}
+.doctors-ul li:nth-child(3n+1){
+	clear:left;
+}
+.doctors-ul li figure{
+	margin:0;
+	text-align:center;
+}
+.doctors-ul li img{
+	width:218px;
+	height:311px;
+	vertical-align:bottom;
+}
+.doctors-ul figcaption{
+	padding:0 10px;
+}
+.doctors-ul li .h3{
+	border-bottom:1px solid #E5EDF2;
+	text-align:center;
+	font:17px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding:10px 0;
+}
+.doctors-ul li .speciality{
+	padding:10px;
+	line-height:1.2;
+}
 
 
 
+/* Equipment page*/
+
+
+
+.equipment-ul{
+	list-style:none;
+	margin:0 0 0 -30px;
+	padding:0;
+}
+.equipment-ul li{
+	float:left;
+	width:343px;
+	margin:30px 0 0 30px;
+	padding:0;
+	background:#fff;
+	min-height:346px;
+}
+.equipment-ul li img{
+	width:343px;
+	height:237px;
+	vertical-align:bottom;
+}
+.equipment-ul li figure{
+	margin:0;
+	text-align:center;
+}
+.equipment-ul li figcaption{
+	padding:24px;
+	font-size:18px;
+}
+.equipment-ul li p{
+	text-indent:0;
+	margin:0;
+}
+
+
+/* Services */
+
+.action-list {
+	list-style:none;
+	margin:0 0 30px -31px;
+	padding:0;
+}
+.action-list li{
+	float:left;
+	list-style:none;
+	margin:31px 0 0 31px;
+	padding:0;
+	width:216px;
+	height:153px;
+	background:#fff;
+	border: 1px solid #E5EDF2;
+}
+.action-list li img{
+	width:216px;
+	height:153px;
+}
+.service-price .col_title{
+	padding:20px 67px;
+}
+.service-price h3{
+	border-bottom: 1px solid #E5EDF2;
+	padding:0 0 13px;
+	margin:0 9px 15px;
+}
+.title-dl{
+	font-size:15px;
+	font-size: 0;
+	line-height: 0;
+	letter-spacing: -1px;
+}
+.service-price .title-dl{
+	margin:0 0 35px 50px;
+}
+.title-dl dt,
+.title-dl dd {
+	margin:0;
+	vertical-align:bottom;
+}
+.title-dl dt {
+	display: inline-block;
+	width: 80%;
+	border-bottom:1px dashed #4f5d6e;
+	margin-bottom: 10px;
+	font-size: 15px;
+	line-height: normal;
+	letter-spacing: normal;
+}
+.title-dl dd{
+	display: inline-block;
+	text-align: right;
+	width: 20%;
+	border-bottom:1px dashed #4f5d6e;
+	margin-bottom: 10px;
+	font-size: 15px;
+	line-height: normal;
+	letter-spacing: normal;
+}
+.title-dl dt span,
+.title-dl dd span {
+	background: #fff;
+	position:relative;
+	top:6px;
+}
+.title-dl dt span{
+	padding-right:8px;
+	max-width:80%;
+}
+.title-dl dd span{
+	padding-left:8px;
+}
+.title-dl dd b{
+	font-size:18px;
+}
+.title-dl dd sub{
+	bottom:0;
+	font-size:12px;
+}
+
+
+
+
+/* Breadcrumd */
+
+
+#breadcrumbs li{
+	display:inline;
+}
+#breadcrumbs li:not(:last-child):after{
+	content:'-';
+	margin:0 10px;
+}
 
 
 /*-Sidebar--*/
 
+aside{
+	float:right;
+	width:292px;
+}
 .aside_right{
 	width:292px;
 	float:right;
 	background:#fff;
 }
 .aside_left{
-	width:715px;
+	width:716px;
 	float:left;
-	background:#fff;
 }
 .sidebar__bottom a {
 	background-color:#00afeb;
@@ -486,10 +675,14 @@ nav ul li a{
 .sidebar__bottom a:hover {
 	background-color:#29D2FF;
 }
+.sidebar__nav{
+	background-color:#fff;
+}
 .sidebar__nav li a{
 	padding: 9px 20px;
 	border-top:1px solid #ddd;
 	display:block;
+	color:#000;
 }
 .sidebar__nav li a:hover{
 	background-color:#00afeb;
@@ -550,9 +743,13 @@ nav ul li a{
 	height:53px;
 	overflow:hidden;
 }
-.doctor-list li .h4{
-	font-weight:bold;
+.doctor-list li a{
 	text-transform:uppercase;
+	font:bold 13px 'PT Sans';
+	color:#428BCA;
+}
+.doctor-list li a:hover{
+	color:#C9376E;
 }
 .doctors .button{
 	width:184px;
@@ -565,6 +762,10 @@ nav ul li a{
 
 /*-Footer--*/
 
+#footer{
+	width:1038px;
+	margin: 0 auto;
+}
 .footer__menu{
 	list-style:none;
 	margin:0 200px;

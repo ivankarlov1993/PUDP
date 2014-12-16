@@ -69,6 +69,7 @@ $('.popup-link').on('click', function(e) {
   var mySwiper = $('#main-slider .swiper-container').swiper({
     mode:'horizontal',
 	speed: 600,
+	autoplay: 5000,
     loop: false,
 	pagination: '#main-pagination',
 	paginationClickable: true,
@@ -77,7 +78,7 @@ $('.popup-link').on('click', function(e) {
 	for (var i = 0; i < swiper.slides.length; i++){
 	  var slide = swiper.slides[i];
 	  var progress = slide.progress;
-	  var translate = progress*swiper.width;
+	  var translate = progress*swiper.width;  
 	  var opacity = 1 - Math.min(Math.abs(progress),1);
 	  slide.style.opacity = opacity;
 	  swiper.setTransform(slide,'translate3d('+translate+'px,0,0)');
@@ -100,31 +101,30 @@ $('.popup-link').on('click', function(e) {
 		$('.swiper-slide .round').each(function(){
 			$(this).text($(this).parents('.swiper-slide').index()+1);
 		});
-	}
+	}	
   });
-
+  
   $('#main-slider .arrow-left').click(function(e){mySwiper.swipePrev()});
   $('#main-slider .arrow-right').click(function(e){mySwiper.swipeNext()});
-
+  
   $("#navigation li a").each(function(){
 		var height = $("#navigation li").height();
 		$(this).css('height', height+'px');
 	});
-
+  
   
 
 //Fancybox
 if($("a").is(".fancybox")){
 	$(function(){
-		if($("a").is(".fancybox")){
-			$(".fancybox").fancybox({
-				helpers : {
-					overlay : {
-						locked : false // important!!
-					}
+		$(".fancybox").fancybox({
+			allowfullscreen: false,
+			helpers : {
+				overlay : {
+					locked : false // important!!
 				}
-			});
-		}
+			}
+		});
 	});
  }
  
