@@ -3,8 +3,22 @@
         <footer id="footer" role="contentinfo">
             <div class="row wrapped-row">
                 <div class="col col__content clearfix">
-                    <div class="ftl">&copy; 2014 Поликлиника №3 <br/> Все права защищены</div>
-                    <div class="ftr">Здесь будут счетчики</div>
+                    <div class="ftl">
+                        <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_RECURSIVE" => "Y",
+                                "PATH" => "/include/copyright.php"
+                            )
+                        );?>
+                    </div>
+                    <div class="ftr">
+                        <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_RECURSIVE" => "Y",
+                                "PATH" => "/include/counters.php"
+                            )
+                        );?>
+                    </div>
                     <ul role="menubar" class="footer__menu">
                         <li role="menuitem"><a href="#">Диагностика</a></li>
                         <li role="menuitem"><a href="#">Профилактика и гигиена</a></li>

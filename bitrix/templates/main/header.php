@@ -37,17 +37,20 @@
 <body>
     <?$APPLICATION->ShowPanel();?>
     <div id="wrapper">
-
         <header id="header" class="clearfix row" role="banner">
             <div id="logo">
-                <a href="/">
+                <?if(!defined('MAIN_PAGE')):?>
+                    <a href="/">
+                <?endif;?>
                     <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                             "AREA_FILE_SHOW" => "file",
                             "AREA_FILE_RECURSIVE" => "Y",
                             "PATH" => "/include/logo.php"
                         )
                     );?>
-                </a>
+                <?if(!defined('MAIN_PAGE')):?>
+                    </a>
+                <?endif;?>
             </div>
             <div class="header__contacts">
                 <span class="tel">
