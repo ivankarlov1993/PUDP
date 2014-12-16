@@ -55,11 +55,11 @@
             <div class="header__contacts">
                 <span class="tel">
                     <a href="tel:<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                                            "AREA_FILE_SHOW" => "file",
-                                            "AREA_FILE_RECURSIVE" => "Y",
-                                            "PATH" => "/include/telephone.php"
-                                        )
-                                    );?>
+                                        "AREA_FILE_SHOW" => "file",
+                                        "AREA_FILE_RECURSIVE" => "Y",
+                                        "PATH" => "/include/telephone.php"
+                                    )
+                                );?>
                     ">
                         <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                                 "AREA_FILE_SHOW" => "file",

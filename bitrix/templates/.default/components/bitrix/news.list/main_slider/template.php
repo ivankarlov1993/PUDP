@@ -1,7 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<pre>
-<?//print_r($arResult);?>
-</pre>
+
 <section class="image-slider" aria-labelledby="advantages">
     <div id="main-slider">
         <h2 id="advantages">5 очевидных преимуществ</h2>
@@ -21,6 +19,7 @@
                              <p><?= $arItem['PREVIEW_TEXT'] ?></p>
                         </div>
                     </div>
+                    <? $k++ ?>
                 <? endforeach ?>
             </div>
         </div>

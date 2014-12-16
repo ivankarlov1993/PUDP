@@ -3,25 +3,33 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 ?>
 
 <section class="row">
-
     <aside class="border-top-green aside_right" role="complementary">
-
-        <nav class="sidebar__nav" role="navigation">
-            <h2 id="sidebar__header">Стоматологические услуги</h2>
-            <ul role="menu" aria-labelledby="sidebar__header">
-                <li role="menuitem"><a href="#"><i class="icon icon01"></i> <span class="i-b">Диагностика</span></a></li>
-                <li role="menuitem"><a href="#"><i class="icon icon02"></i> <span class="i-b">Профилактика и гигиена</span></a></li>
-                <li role="menuitem"><a href="#"><i class="icon icon03"></i> <span class="i-b">Снятие зубного налета</span></a></li>
-                <li role="menuitem"><a href="#"><i class="icon icon04"></i> <span class="i-b">Кариес и его лечение</span></a></li>
-                <li role="menuitem"><a href="#"><i class="icon icon05"></i> <span class="i-b">Эндодонтия</span></a></li>
-                <li role="menuitem"><a href="#"><i class="icon icon06"></i> <span class="i-b">Удаление зубов (экстракция)</span></a></li>
-                <li role="menuitem"><a href="#"><i class="icon icon07"></i> <span class="i-b">Обзорное панорамное исследование</span></a></li>
-                <li role="menuitem"><a href="#"><i class="icon icon02"></i> <span class="i-b">Отбеливание зубов</span></a></li>
-            </ul>
-        </nav>
-
+        <?$APPLICATION->IncludeComponent("bitrix:menu", "services_menu", Array(
+                "ROOT_MENU_TYPE" => "main",	// Тип меню для первого уровня
+                "MENU_THEME" => "site",
+                "MENU_CACHE_TYPE" => "A",	// Тип кеширования
+                "MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                "MENU_CACHE_USE_GROUPS" => "N",	// Учитывать права доступа
+                "MENU_CACHE_GET_VARS" => "",	// Значимые переменные запроса
+                "MAX_LEVEL" => "1",	// Уровень вложенности меню
+                "CHILD_MENU_TYPE" => "main",	// Тип меню для остальных уровней
+                "USE_EXT" => "Y",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+                "DELAY" => "N",	// Откладывать выполнение шаблона меню
+                "ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+            ),
+            false
+        );?>
+        
         <div class="sidebar__bottom">
-            <a href="#"><i class="icon calendar"></i> Расписание приема врачей</a>
+            <a href="<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_RECURSIVE" => "Y",
+                    "PATH" => "/include/work_time.php"
+                )
+            );?>">
+                <i class="icon calendar"></i>
+                Расписание приема врачей
+            </a>
         </div>
     </aside>
 
