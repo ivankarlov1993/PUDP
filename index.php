@@ -25,75 +25,62 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
         </div>
     </aside>
 
-    <section class="image-slider" aria-labelledby="advantages">
-        <div id="main-slider">
-            <h2 id="advantages">5 очевидных преимуществ</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper" style="width: 3730px; height: 508px; transition: 0.6s; -webkit-transition: 0.6s; transform: translate3d(-1492px, 0px, 0px); -webkit-transform: translate3d(-1492px, 0px, 0px);">
-                    <div class="swiper-slide" aria-describedby="sl-desc-1" aria-labelledby="sl-header-1" style="width: 746px; height: 508px; opacity: 0; transform: translate3d(1492px, 0px, 0px); -webkit-transform: translate3d(1492px, 0px, 0px); transition: 600ms; -webkit-transition: 600ms;">
-                        <div class="slider-image">
-                            <div class="slider-image-inner" style="background-image:url('images/upload/slide1.jpg');">
-                                <h3 id="sl-header-1"><i class="icon round">1</i> <span class="i-b">Безопасность лечения </span></h3>
-                            </div>
-                        </div>
-                        <div class="slide-descr" id="sl-desc-1">
-                            <p>Стоматологическое отделение является структурным подразделением Поликлиники, что в свою очередь обеспечивает доступ к другим специалистам и подразделениям, таким как: скорая медицинская помощь, анестезиолог (при стационаре одного дня) и др.</p>
-                            <p>Таким образом мы можем реагировать и сводить к минимуму риски при нестандартных ситуациях, проводить дополнительные методы обследования в кратчайшие сроки и на одной территории (например на анастетики)</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" aria-describedby="sl-desc-2" aria-labelledby="sl-header-2" style="width: 746px; height: 508px; opacity: 0; transform: translate3d(746px, 0px, 0px); -webkit-transform: translate3d(746px, 0px, 0px); transition: 600ms; -webkit-transition: 600ms;">
-                        <div class="slider-image">
-                            <div class="slider-image-inner" style="background-image:url('images/upload/slide1.jpg');">
-                                <h3 id="sl-header-2"><i class="icon round">2</i> <span class="i-b">Безопасность лечения 2</span></h3>
-                            </div>
-                        </div>
-                        <div class="slide-descr" id="sl-desc-2">
-                            <p>Стоматологическое отделение является структурным подразделением Поликлиники, что в свою очередь обеспечивает доступ к другим специалистам и подразделениям, таким как: скорая медицинская помощь, анестезиолог (при стационаре одного дня) и др.</p>
-                            <p>Таким образом мы можем реагировать и сводить к минимуму риски при нестандартных ситуациях, проводить дополнительные методы обследования в кратчайшие сроки и на одной территории (например на анастетики)</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-visible swiper-slide-active" aria-describedby="sl-desc-3" aria-labelledby="sl-header-3" style="width: 746px; height: 508px; opacity: 1; transform: translate3d(0px, 0px, 0px); -webkit-transform: translate3d(0px, 0px, 0px); transition: 600ms; -webkit-transition: 600ms;">
-                        <div class="slider-image">
-                            <div class="slider-image-inner" style="background-image:url('images/upload/slide1.jpg');">
-                                <h3 id="sl-header-3"><i class="icon round">3</i> <span class="i-b">Безопасность лечения 3</span></h3>
-                            </div>
-                        </div>
-                        <div class="slide-descr" id="sl-desc-3">
-                            <p>Стоматологическое отделение является структурным подразделением Поликлиники, что в свою очередь обеспечивает доступ к другим специалистам и подразделениям, таким как: скорая медицинская помощь, анестезиолог (при стационаре одного дня) и др.</p>
-                            <p>Таким образом мы можем реагировать и сводить к минимуму риски при нестандартных ситуациях, проводить дополнительные методы обследования в кратчайшие сроки и на одной территории (например на анастетики)</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" aria-describedby="sl-desc-4" aria-labelledby="sl-header-4" style="width: 746px; height: 508px; opacity: 0; transform: translate3d(-746px, 0px, 0px); -webkit-transform: translate3d(-746px, 0px, 0px); transition: 600ms; -webkit-transition: 600ms;">
-                        <div class="slider-image">
-                            <div class="slider-image-inner" style="background-image:url('images/upload/slide1.jpg');">
-                                <h3 id="sl-header-4"><i class="icon round">4</i> <span class="i-b">Безопасность лечения 4</span></h3>
-                            </div>
-                        </div>
-                        <div class="slide-descr" id="sl-desc-4">
-                            <p>Стоматологическое отделение является структурным подразделением Поликлиники, что в свою очередь обеспечивает доступ к другим специалистам и подразделениям, таким как: скорая медицинская помощь, анестезиолог (при стационаре одного дня) и др.</p>
-                            <p>Таким образом мы можем реагировать и сводить к минимуму риски при нестандартных ситуациях, проводить дополнительные методы обследования в кратчайшие сроки и на одной территории (например на анастетики)</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" aria-describedby="sl-desc-5" aria-labelledby="sl-header-5" style="width: 746px; height: 508px; opacity: 0; transform: translate3d(-1492px, 0px, 0px); -webkit-transform: translate3d(-1492px, 0px, 0px); transition: 600ms; -webkit-transition: 600ms;">
-                        <div class="slider-image">
-                            <div class="slider-image-inner" style="background-image:url('images/upload/slide1.jpg');">
-                                <h3 id="sl-header-5"><i class="icon round">5</i> <span class="i-b">Безопасность лечения 5</span></h3>
-                            </div>
-                        </div>
-                        <div class="slide-descr" id="sl-desc-5">
-                            <p>Стоматологическое отделение является структурным подразделением Поликлиники, что в свою очередь обеспечивает доступ к другим специалистам и подразделениям, таким как: скорая медицинская помощь, анестезиолог (при стационаре одного дня) и др.</p>
-                            <p>Таким образом мы можем реагировать и сводить к минимуму риски при нестандартных ситуациях, проводить дополнительные методы обследования в кратчайшие сроки и на одной территории (например на анастетики)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="sl-navigation">
-                <span class="nav-arrow arrow-left"></span>
-                <span class="nav-arrow arrow-right"></span>
-                <div id="main-pagination"><span class="swiper-pagination-switch">1</span><span class="swiper-pagination-switch">2</span><span class="swiper-pagination-switch swiper-visible-switch swiper-active-switch">3</span><span class="swiper-pagination-switch">4</span><span class="swiper-pagination-switch">5</span></div>
-            </div>
-        </div>
-    </section>
+    <?$APPLICATION->IncludeComponent("bitrix:news.list", "main_slider", Array(
+            "IBLOCK_TYPE" => "2",	// Тип информационного блока (используется только для проверки)
+            "IBLOCK_ID" => "3",	// Код информационного блока
+            "NEWS_COUNT" => "5",	// Количество новостей на странице
+            "SORT_BY1" => "SORT",	// Поле для первой сортировки новостей
+            "SORT_ORDER1" => "ASC",	// Направление для первой сортировки новостей
+            "SORT_BY2" => "NAME",	// Поле для второй сортировки новостей
+            "SORT_ORDER2" => "ASC",	// Направление для второй сортировки новостей
+            "FILTER_NAME" => "",	// Фильтр
+            "FIELD_CODE" => array(	// Поля
+                0 => "ID",
+                1 => "NAME",
+                2 => "DETAIL_TEXT",
+                3 => "DETAIL_PICTURE",
+                4 => "",
+            ),
+            "PROPERTY_CODE" => array(	// Свойства
+                0 => "",
+                1 => "",
+            ),
+            "CHECK_DATES" => "Y",	// Показывать только активные на данный момент элементы
+            "DETAIL_URL" => "",	// URL страницы детального просмотра (по умолчанию - из настроек инфоблока)
+            "AJAX_MODE" => "N",	// Включить режим AJAX
+            "AJAX_OPTION_JUMP" => "N",	// Включить прокрутку к началу компонента
+            "AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
+            "AJAX_OPTION_HISTORY" => "N",	// Включить эмуляцию навигации браузера
+            "CACHE_TYPE" => "A",	// Тип кеширования
+            "CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+            "CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
+            "CACHE_GROUPS" => "N",	// Учитывать права доступа
+            "PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
+            "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
+            "SET_STATUS_404" => "N",	// Устанавливать статус 404, если не найдены элемент или раздел
+            "SET_TITLE" => "N",	// Устанавливать заголовок страницы
+            "INCLUDE_IBLOCK_INTO_CHAIN" => "N",	// Включать инфоблок в цепочку навигации
+            "ADD_SECTIONS_CHAIN" => "N",	// Включать раздел в цепочку навигации
+            "HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
+            "PARENT_SECTION" => "",	// ID раздела
+            "PARENT_SECTION_CODE" => "",	// Код раздела
+            "INCLUDE_SUBSECTIONS" => "Y",	// Показывать элементы подразделов раздела
+            "PAGER_TEMPLATE" => ".default",	// Шаблон постраничной навигации
+            "DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
+            "DISPLAY_BOTTOM_PAGER" => "N",	// Выводить под списком
+            "PAGER_TITLE" => "Новости",	// Название категорий
+            "PAGER_SHOW_ALWAYS" => "N",	// Выводить всегда
+            "PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
+            "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
+            "PAGER_SHOW_ALL" => "N",	// Показывать ссылку "Все"
+            "DISPLAY_DATE" => "N",	// Выводить дату элемента
+            "DISPLAY_NAME" => "N",	// Выводить название элемента
+            "DISPLAY_PICTURE" => "N",	// Выводить изображение для анонса
+            "DISPLAY_PREVIEW_TEXT" => "N",	// Выводить текст анонса
+            "AJAX_OPTION_ADDITIONAL" => "",	// Дополнительный идентификатор
+        ),
+        false
+    );?>
 </section>
 
 <section class="row wrapped-row clearfix">

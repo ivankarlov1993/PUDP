@@ -10,61 +10,81 @@
 
     <?$APPLICATION->ShowHead();?>
     <?
-        $APPLICATION->SetAdditionalCSS('/design/css/normalize.css');
-        $APPLICATION->SetAdditionalCSS('/design/css/style.css');
-        $APPLICATION->SetAdditionalCSS('/design/css/idangerous.swiper.css');
-        $APPLICATION->SetAdditionalCSS('/design/css/jquery.formstyler.css');
-        $APPLICATION->SetAdditionalCSS('/design/css/jquery.fancybox.css');
 
+    $APPLICATION->SetAdditionalCSS('/design/css/normalize.css');
+    $APPLICATION->SetAdditionalCSS('/design/css/style.css');
+    $APPLICATION->SetAdditionalCSS('/design/css/idangerous.swiper.css');
+    $APPLICATION->SetAdditionalCSS('/design/css/jquery.formstyler.css');
+    $APPLICATION->SetAdditionalCSS('/design/css/jquery.fancybox.css');
+
+    $APPLICATION->AddHeadScript('/design/js/jquery.min.js');
+    $APPLICATION->AddHeadScript('/design/js/query-ui.min.js');
+    $APPLICATION->AddHeadScript('/design/js/mbdetect.js');
+    $APPLICATION->AddHeadScript('/design/js/idangerous.swiper.min.js');
+    $APPLICATION->AddHeadScript('/design/js/idangerous.swiper.progress.min.js');
+    $APPLICATION->AddHeadScript('/design/js/jquery.fancybox.js');
+    $APPLICATION->AddHeadScript('/design/js/custom.js');
     ?>
 
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,300,300italic,600,600italic,700italic,800,800italic&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
-    <link href="css/jquery.fancybox.css" rel="stylesheet" />
     <!--[if lte IE 8]>
-    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
-    <script type="text/javascript" src="js/selectivizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="/design/css/ie8.css" />
+    <script type="text/javascript" src="/design/js/selectivizr.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="/design/js/modernizr.js"></script>
 </head>
 <body>
-<?$APPLICATION->ShowPanel();?>
-<div id="wrapper">
+    <?$APPLICATION->ShowPanel();?>
+    <div id="wrapper">
 
-    <header id="header" class="clearfix row" role="banner">
-        <div id="logo">
-            <a href="/"><img src="/design/images/logo.png" alt="Поликлиника №3 - Управление делами президента РФ" /></a>
-        </div>
-        <div class="header__contacts">
-            <span class="tel">
-                <a href="tel:+74959821010">
+        <header id="header" class="clearfix row" role="banner">
+            <div id="logo">
+                <a href="/">
                     <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                             "AREA_FILE_SHOW" => "file",
                             "AREA_FILE_RECURSIVE" => "Y",
-                            "PATH" => "/include/telephone.php"
+                            "PATH" => "/include/logo.php"
                         )
                     );?>
                 </a>
-            </span>
-            Многоканальный телефон
-        </div>
-    </header>
+            </div>
+            <div class="header__contacts">
+                <span class="tel">
+                    <a href="tel:<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                                            "AREA_FILE_SHOW" => "file",
+                                            "AREA_FILE_RECURSIVE" => "Y",
+                                            "PATH" => "/include/telephone.php"
+                                        )
+                                    );?>
+                    ">
+                        <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_RECURSIVE" => "Y",
+                                "PATH" => "/include/telephone.php"
+                            )
+                        );?>
+                    </a>
+                </span>
+                Многоканальный телефон
+            </div>
+        </header>
 
 
-    <?$APPLICATION->IncludeComponent("bitrix:menu", "menu", Array(
-	"ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
-	"MENU_THEME" => "site",
-	"MENU_CACHE_TYPE" => "A",	// Тип кеширования
-	"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
-	"MENU_CACHE_USE_GROUPS" => "N",	// Учитывать права доступа
-	"MENU_CACHE_GET_VARS" => "",	// Значимые переменные запроса
-	"MAX_LEVEL" => "1",	// Уровень вложенности меню
-	"CHILD_MENU_TYPE" => "second",	// Тип меню для остальных уровней
-	"USE_EXT" => "Y",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
-	"DELAY" => "N",	// Откладывать выполнение шаблона меню
-	"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
-	),
-	false
-    );?>
-    <div id="main" role="main">
+        <?$APPLICATION->IncludeComponent("bitrix:menu", "menu", Array(
+                "ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
+                "MENU_THEME" => "site",
+                "MENU_CACHE_TYPE" => "A",	// Тип кеширования
+                "MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+                "MENU_CACHE_USE_GROUPS" => "N",	// Учитывать права доступа
+                "MENU_CACHE_GET_VARS" => "",	// Значимые переменные запроса
+                "MAX_LEVEL" => "1",	// Уровень вложенности меню
+                "CHILD_MENU_TYPE" => "second",	// Тип меню для остальных уровней
+                "USE_EXT" => "Y",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+                "DELAY" => "N",	// Откладывать выполнение шаблона меню
+                "ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+            ),
+            false
+        );?>
+        <div id="main" role="main">
 		
