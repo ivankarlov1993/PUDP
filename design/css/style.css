@@ -466,7 +466,9 @@ nav ul li a{
 .content{
 	min-height:669px;
 }
-
+.main_text {
+ min-height: 635px;
+}
 
 /* Doctors page */
 

@@ -18,28 +18,28 @@ $aMenuLinks = Array(
 		"Оборудование", 
 		"/equipment/", 
 		Array(), 
-		Array("class"=>"navicon03"), 
+		Array("class"=>"navicon02"), 
 		"" 
 	),
 	Array(
 		"Врачи отделения", 
 		"/doctors/", 
 		Array(), 
-		Array("class"=>"navicon04"), 
+		Array("class"=>"navicon02"), 
 		"" 
 	),
 	Array(
 		"Расписание", 
 		"/timetable/", 
 		Array(), 
-		Array("class"=>"navicon05"), 
+		Array("class"=>"navicon02"), 
 		"" 
 	),
 	Array(
 		"Контакты", 
 		"/contacts/", 
 		Array(), 
-		Array("class"=>"navicon06"), 
+		Array("class"=>"navicon02"), 
 		"" 
 	)
 );

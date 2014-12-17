@@ -1,4 +1,4 @@
-<?
+<?define('SHOW_OFFERS', 'Y');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Оборудование");
 ?>

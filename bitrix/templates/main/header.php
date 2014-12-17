@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title><?$APPLICATION->ShowTitle()?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=1024">
+    <meta name="viewport" content="width=1280">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="x-rim-auto-match" content="none">
 
@@ -54,13 +54,7 @@
             </div>
             <div class="header__contacts">
                 <span class="tel">
-                    <a href="tel:<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
-                                        "AREA_FILE_SHOW" => "file",
-                                        "AREA_FILE_RECURSIVE" => "Y",
-                                        "PATH" => "/include/telephone.php"
-                                    )
-                                );?>
-                    ">
+                    <a href="tel:+74959821010">
                         <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
                                 "AREA_FILE_SHOW" => "file",
                                 "AREA_FILE_RECURSIVE" => "Y",
